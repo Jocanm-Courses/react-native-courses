@@ -1,8 +1,26 @@
 import React from 'react';
-import {HelloWord} from './screens/hello-world-page/HelloWord';
+import {SafeAreaView, StyleSheet} from 'react-native';
+import {HomeWorkScreen} from './screens/homework-screen/HomeWorkScreen';
+
+// LAST CLASS 68, HEIGHT, WIDTH porcentual y dimensiones de la pantalla
 
 const App = () => {
-  return <HelloWord />;
+    return (
+        <SafeAreaView style={styles.container}>
+            {/* <HelloWord /> */}
+            {/* <BoxObjectModelPage /> */}
+            {/* <DimensionsScreen /> */}
+            {/* <PositionScreen /> */}
+            {/* <FlexScreen /> */}
+            <HomeWorkScreen />
+        </SafeAreaView>
+    );
 };
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+});
 
 export default App;
